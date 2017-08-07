@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/js/global.js"],"names":["window","console","log","Date","now"],"mappings":";;AAAA,CAAC,kBAAU;AACT;AACAA,SAAOC,OAAP,CAAeC,GAAf,mBAAmCC,KAAKC,GAAL,EAAnC;AACD,CAHD,EAGGJ,MAHH","file":"global.js","sourcesContent":["(window => {\n  // TODO: global logics\n  window.console.log(`Hey bitch! @ ${Date.now()}`)\n})(window)\n"]}
