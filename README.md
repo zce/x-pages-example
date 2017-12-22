@@ -43,5 +43,3 @@ $ x-pages deploy --production
 ## License
 
 [MIT](LICENSE) &copy; [汪磊](https://zce.me)
-
-http://polar.gbjsolution.com/
