@@ -1,14 +1,17 @@
 @import 'variables';
-@import '../vendor/bootstrap/scss/bootstrap';
+@import '../scss/bootstrap';
 
 body {
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 .site-header {
   @include box-shadow(0px 1px 4px 0px rgba($dark, .15));
 
-  .navbar-brand img {
-    max-height: 30px;
+  .navbar-brand {
+    img {
+      max-height: 40px;
+    }
   }
 }

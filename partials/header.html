@@ -1,7 +1,8 @@
-<header class="site-header fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+<header class="site-header mb-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="/"><img src="{{asset 'img/logo.png'}}" alt="zce.me"></a>
+      <a class="navbar-brand" href="{{url '/'}}"><img src="{{asset 'img/logo.png'}}" alt="zce.me"></a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-menu" aria-controls="site-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -9,19 +10,16 @@
       <div class="collapse navbar-collapse" id="site-menu">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{url '/'}}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Style Guide</a>
+            <a class="nav-link" href="{{url '/about.html'}}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="{{url '/contact.html'}}">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Error Page</a>
+            <a class="nav-link" href="{{url '/error.html'}}">Error Page</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -37,8 +35,12 @@
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search for..." aria-label="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="submit">Go!</button>
+            </span>
+          </div>
         </form>
       </div>
     </div>
