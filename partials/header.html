@@ -1,7 +1,7 @@
 <header class="site-header mb-4">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="{{url '/'}}"><img src="{{asset 'img/logo.png'}}" alt="zce.me"></a>
+      <a class="navbar-brand" href="{{url '/index.html'}}"><img src="{{asset 'img/logo.svg'}}" alt="zce.me" height="40"></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-menu" aria-controls="site-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -10,7 +10,7 @@
       <div class="collapse navbar-collapse" id="site-menu">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="{{url '/'}}">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{url '/index.html'}}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url '/about.html'}}">About</a>
@@ -35,12 +35,8 @@
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <div class="input-group">
-            <input type="search" class="form-control" placeholder="Search for..." aria-label="Search for...">
-            <span class="input-group-btn">
-              <button class="btn btn-primary" type="submit">Go!</button>
-            </span>
-          </div>
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
     </div>

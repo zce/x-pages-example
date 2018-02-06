@@ -4,6 +4,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .site-header {
@@ -14,4 +15,14 @@ body {
       max-height: 40px;
     }
   }
+}
+
+.site-main {
+  img {
+    max-width: 100%;
+  }
+}
+
+.site-footer {
+  font-size: $font-size-sm;
 }

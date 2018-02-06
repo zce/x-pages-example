@@ -1,16 +1,8 @@
 ---
 layout: basic
-title: Home
+title: X-PAGES
 slogan: MAKE IT BETTER
 ---
-
-<main role="main" class="container">
-  <div class="jumbotron">
-    <h1>Awesome X-Pages</h1>
-    <p class="lead">This example is a quick start for x-pages.</p>
-    <a class="btn btn-lg btn-primary" href="https://github.com/zce/x-pages" role="button">View X-Pages docs &raquo;</a>
-  </div>
-</main>
 
 {{#block 'styles'}}
 <style>
@@ -19,6 +11,15 @@ slogan: MAKE IT BETTER
   }
 </style>
 {{/block}}
+
+<main id="content" class="site-main container" role="main">
+  <div class="jumbotron text-center">
+    <figure><img src="{{asset 'img/zce.png'}}"></figure>
+    <h1>AWESOME {{title}}</h1>
+    <p class="lead">{{slogan}}</p>
+    <a class="btn btn-primary btn-lg" href="https://github.com/zce/x-pages" role="button">View {{title}} docs &raquo;</a>
+  </div>
+</main>
 
 {{#block 'scripts'}}
 <script>

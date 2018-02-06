@@ -11,7 +11,8 @@ module.exports = {
    * @example
    *   {{@site.title}}
    */
-  title: 'Creative',
+  title: 'X-PAGES EXAMPLE',
+
   /**
    * Site url
    * @type {String}
@@ -19,6 +20,7 @@ module.exports = {
    *   {{@site.url}}
    */
   url: 'http://localhost:2080/',
+
   /**
    * Exclude list
    * @type {Array}

@@ -4,7 +4,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="{{asset 'img/icon/ms-icon-144x144.png'}}">
 <meta name="theme-color" content="#ffffff">
-<title>{{#if @page.title}}{{@page.title}} &laquo; {{/if}}{{@site.title}}</title>
+<title>{{title}}{{assert title ' &laquo; '}}{{@site.title}}</title>
 <link rel="apple-touch-icon" sizes="57x57" href="{{asset 'img/icon/apple-icon-57x57.png'}}">
 <link rel="apple-touch-icon" sizes="60x60" href="{{asset 'img/icon/apple-icon-60x60.png'}}">
 <link rel="apple-touch-icon" sizes="72x72" href="{{asset 'img/icon/apple-icon-72x72.png'}}">
