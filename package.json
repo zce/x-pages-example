@@ -14,7 +14,6 @@
   },
   "license": "MIT",
   "author": "zce <w@zce.me> (https://zce.me/)",
-  "main": "config.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zce/x-pages-example.git"
@@ -29,8 +28,6 @@
   "x-pages": {
     "title": "X-PAGES EXAMPLE",
     "url": "http://localhost:2080/",
-    "exclude": [
-      "README.md"
-    ]
+    "exclude": ["README.md"]
   }
 }
