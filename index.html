@@ -1,28 +1,19 @@
----
-layout: basic
-title: X-PAGES
-slogan: MAKE IT BETTER
----
+{% extends "layouts/basic.html" %}
 
-{{#block 'styles'}}
+{% block styles %}
 <style>
-  .body {
-    background-color: #f8f9fb;
+  body {
+    background-color: #000;
   }
 </style>
-{{/block}}
+{% endblock %}
 
-<main id="content" class="site-main container" role="main">
-  <div class="jumbotron text-center">
-    <figure><img src="{{asset 'img/zce.png'}}"></figure>
-    <h1>AWESOME {{title}}</h1>
-    <p class="lead">{{slogan}}</p>
-    <a class="btn btn-primary btn-lg" href="https://github.com/zce/x-pages" role="button">View {{title}} docs &raquo;</a>
-  </div>
-</main>
+{% block body %}
+<img src="assets/img/rock.png">
+{% endblock %}
 
-{{#block 'scripts'}}
+{% block scripts %}
 <script>
   console.log('page scripts');
 </script>
-{{/block}}
+{% endblock %}

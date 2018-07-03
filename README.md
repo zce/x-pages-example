@@ -27,6 +27,9 @@
 ## Usage
 
 ```sh
+# install x-pages globally
+$ yarn global add x-pages
+
 # dev hot reload serve
 $ x-pages serve
 

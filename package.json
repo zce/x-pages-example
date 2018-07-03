@@ -13,21 +13,30 @@
     "url": "https://github.com/zce/x-pages-example/issues"
   },
   "license": "MIT",
-  "author": "zce <w@zce.me> (https://zce.me/)",
+  "author": {
+    "name": "zce",
+    "email": "w@zce.me",
+    "url": "https://zce.me"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zce/x-pages-example.git"
   },
   "scripts": {
     "build": "x-pages build",
-    "start": "x-pages serve"
+    "serve": "x-pages serve"
   },
   "devDependencies": {
     "x-pages": "latest"
   },
-  "x-pages": {
+  "xPages": {
     "title": "X-PAGES EXAMPLE",
     "url": "http://localhost:2080/",
-    "exclude": ["README.md"]
+    "exclude": [
+      "README.md"
+    ]
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1"
   }
 }
